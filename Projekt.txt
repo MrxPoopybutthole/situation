@@ -1,0 +1,20 @@
+-Helikopter fliegt in einem 3D Raum 
+-Dabei variiert die geschwindigkeit und die höhe und die position nach rechts und links
+
+-Es werden zwei Radar Sensoren aufgestellt deren Position bekannt ist 
+-Diese Sensoren haben einen begrenzen Winkel in dem Sie messen
+-Diese Pegel der gemessen wird wird dann wie eine Überwachungskamera hin und her geschwenkt
+
+Es Soll dann die Position und geschwindigkeit mit dem Kalman Filter geschätzt werden
+
+-Beobachtungsgleichung (also Gleichung die siw bewegung von dem Helikopter im Raum beschreibt) aufstellen
+-Diese gleichung wird dem Kalman übergeben mit den verrauschten Daten von den Sensoren
+
+
+neuer ansatz:
+
+größerer winkel bei radar nehmen 
+damit bildet sich eine halbe Kreis fläche welche auch eine Höhe hat, das für beide radar sensoren
+diese flächen schnieden sich und haben eine Schnitt gerade
+diese Gerade hat in der mitte den Punkt und hat direkt auch ein Bereich für die unsicherheit von einem ende bis zum anderen
+bei der Messung wird immer der gleiche Winkel zurück gegeben auch wenn sich der Punkt am ende der Offenen Bereichs liegt
